@@ -1,0 +1,54 @@
+<html>
+    <head>
+<style>
+    h1{
+        color:brown;
+        border: 2px solid red;
+        background-color:aquamarine;
+        float:middle;
+        padding:20px
+    }
+    #div2{ color:chocolate;
+border: 2px solid red;
+padding: 20px;
+font-weight:bold;
+background-color:antiquewhite
+    }
+</style>
+    </head>
+    <body>
+        <h1><strong>my phone contacts</strong></h1>
+<div id="div2">
+    <h3>name:</h4>
+        <p id="id1"></p>
+        <br>
+        <h3>phone-number:</p>
+                <p id="id2"></p>
+                <br>
+                <h3>city</p>
+                  <p id="id3"></p>
+                  <br>
+                  <h3>school:</p>
+                  <p id="id4"></p>
+         
+                  </div>
+        <script>
+
+            var mycontact = {
+            name: " Atharva",
+phone: " 23456-65432",
+city: " mumbai",
+school:" Sunrise-academy"
+            };
+var E1 = mycontact.name;
+var E2 = mycontact.phone;
+document.getElementById("id1").innerHTML = mycontact.name;
+document.getElementById("id2").innerHTML = E2
+
+document.getElementById("id3").innerHTML = mycontact["city"];
+            
+            document.getElementById("id4").innerHTML = mycontact.school;
+
+        </script>
+    </body>
+</html>
